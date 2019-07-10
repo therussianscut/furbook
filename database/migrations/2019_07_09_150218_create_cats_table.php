@@ -15,7 +15,10 @@ class CreateCatsTable extends Migration
     {
         Schema::create('cats', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('name');
+            $table->date('date_of_birth');
+            $table->bigInteger('breed_id')->unsigned();
+            $table->foreign('breed_id')->references('id')->on('breeds');
         });
     }
 

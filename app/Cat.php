@@ -2,7 +2,6 @@
 
 namespace Furbook;
 
-use App\Company;
 use Illuminate\Database\Eloquent\Model;
 
 class Cat extends Model

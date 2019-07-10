@@ -1,22 +1,17 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.master')
+@section('title', 'About Page')
 
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-</head>
-<body>
+@section('header', 'this is the about section')
 
 
-<h1> About this Site</h1>
 
-<p> there are over {{$number_of_cats}} on this site</p>
+@section('content')
 
-</body>
-</html>
+
+    <p> This is some main content to display in the main body.</p>
+
+    <p> There are {{$number_of_cats}} on this site</p>
+
+
+    @endsection
 
